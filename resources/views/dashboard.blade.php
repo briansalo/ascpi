@@ -41,7 +41,7 @@
                         <div>
                             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">Level Up!</p>
                             <h2 class="mt-4 text-3xl font-semibold text-slate-900">Congratulations!</h2>
-                            <p class="mt-3 text-slate-600">You have advanced from {{ session('levelUpFrom') }} to {{ session('levelUpTo') }}. Keep going with your next set of questions now.</p>
+                            <p class="mt-3 text-slate-600">You have advanced from {{ session('levelUpFrom') }} to {{ session('levelUpTo') }}. Keep going love 😘. I'm really proud of you!😉</p>
                         </div>
                         <button onclick="this.closest('div[role=dialog]').remove()" class="rounded-full bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-200">Close</button>
                     </div>
@@ -73,6 +73,7 @@
                 </div>
             </div>    
         @endif
+ @if($user->level != 'ascpi')       
 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
 
     <!-- Today's Quiz -->
@@ -167,6 +168,29 @@
     </div>
 
 </div>
+@else
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-md shadow-slate-200/40 p-6 hover:-translate-y-1 transition">
+
+            <div class="flex justify-between items-start">
+
+                <div>
+                    <h2 class="mt-2 text-4xl font-bold text-slate-800">EASY LEVEL</h2>
+                </div>
+
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center">📋</div>
+
+            </div>
+
+
+
+            <a href="{{ $user->hasTakenQuizToday() ? route('quiz.review') : route('quiz.index') }}" class="mt-5 block text-center rounded-xl bg-gradient-to-r from-indigo-500 to-blue-500 text-white py-3 font-medium hover:opacity-90">
+                REVIEW
+            </a>
+        </div>
+</div>
+@endif
         <div class="mt-5">
             <div class="rounded-xl bg-white p-6 shadow-sm border">
                 <h2 class="text-lg font-semibold">Subject Performance</h2>

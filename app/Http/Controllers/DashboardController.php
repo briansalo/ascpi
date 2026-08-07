@@ -14,8 +14,9 @@ class DashboardController extends Controller
         $levelQuestionCount = Question::where('level', $user->level)->count();
         $levelAnsweredCount = $user->latestLevelResults()->count();
         $levelAccuracy = $user->levelAccuracy();
+        $isJustLevelUp = false;
 
-        if ($levelAnsweredCount == $levelQuestionCount && $levelAccuracy > 80) {
+        if ($levelAnsweredCount == $levelQuestionCount && $levelAccuracy >= 80) {
             $levelUpFrom = $user->level;
             switch (strtolower($user->level)) {
                 case 'easy':
@@ -75,7 +76,7 @@ class DashboardController extends Controller
             });
 
         $requiresRetake = $levelQuestionCount > 0 && $levelAnsweredCount === $levelQuestionCount && $levelAccuracy < 80;
-        $isJustLevelUp = false;
+       
         $levelUpFrom = null;
         $levelUpTo = null;
 

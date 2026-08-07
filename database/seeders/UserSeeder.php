@@ -17,6 +17,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Quiz Student',
                 'password' => 'password',
+                'level' => 'easy'
             ]
         );
 
@@ -25,6 +26,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Fritzl',
                 'password' => 'ilovebrian',
+                'level' => 'easy'
             ]
         );
     }
