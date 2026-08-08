@@ -12,7 +12,7 @@ class MotivationalMessageSeeder extends Seeder
         $motivationalMessages = [
             'low' => [
                 [
-                    'message' => "Nganung gamay mani imong score? Mao na kay sige man og chat anang seaman.",
+                    'message' => "Nganung gamay mani imong score? Mao na kay sige man og chat anang seaman. haahah bawi rata next quiz love",
                     'image_url' => null,
                     'video_url' => null
                 ],
@@ -22,31 +22,26 @@ class MotivationalMessageSeeder extends Seeder
                     'video_url' => null
                 ],
                 [
-                    'message' => "cute lagi imong score ron? murag kani sila kay cute couple",
-                    'image_url' => 'test.com',
+                    'message' => "imong score ron kay same sa imoha kay cute hahahaha",
+                    'image_url' => null,
                     'video_url' => null
                 ],
                 [
-                    'message' => "✨ Ayaw surrender ha. Ganahan pa ko makakita sa imong next score. 😊",
+                    'message' => "✨ Ayaw surrender ha. Ganahan pa ko makakita sa imong next score. bawi rata 😊",
                     'image_url' => null,
                     'video_url' => null
                 ],
                 [
                     'message' => "Gamay lagi imong score ron? Hmm, basin kulang kag lambing ni Brian? 😆",
-                    'image_url' => '/images/motivational/kulang-lambing.jpg',
+                    'image_url' => null,
                     'video_url' => null
                 ],
             ],
 
             'medium' => [
                 [
-                    'message' => "😏 Kulangan pa ko sa score. Focus sa sunod, dili sigeg bega sa seaman.",
+                    'message' => "kulangan pako sa imong score ron, ta mangaon nalang ta, dedto nalang ta bawi sa kaon hahaha",
                     'image_url' => null,
-                    'video_url' => null,
-                ],
-                [
-                    'message' => "😂 Not bad ang score. Dili man need perfect score, ikaw lang sapat na. Ayieh, hahaha.",
-                    'image_url' => '/images/motivational/ikaw-lang-sapat.jpg',
                     'video_url' => null,
                 ],
                 [
@@ -56,7 +51,7 @@ class MotivationalMessageSeeder extends Seeder
                 ],
                 [
                     'message' => "😏 Focus lang sa review... ako na bahala mo-cheer nimo.",
-                    'image_url' => '/images/motivational/cheer-you.jpg',
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
@@ -65,31 +60,32 @@ class MotivationalMessageSeeder extends Seeder
                     'video_url' => null,
                 ],
                 [
-                    'message' => "😂 Dili man perfect, pero pwede na pang-flex sa akong heart. 😜",
+                    'message' => "😂 Dili man perfect imong score ron, pero pwede na pang-flex sa akong heart. 😜",
                     'image_url' => null,
                     'video_url' => null,
                 ],
                 [
-                    'message' => "focus ra kaayo ka sa ascpi exam oy tanawa sa ne oh pang pa wala sa stress 😜",
-                    'image_url' => 'test.com',
+                    'message' => "hmm not bad ang score ron. pero murag feel nako need ko nimo ron aron next quiz kay dako na og score hahah. 😜",
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
-                    'message' => "tanawa sa ni oh para sunod quiz kay dako nakag score 😜",
+                    'message' => "guto ka mo dako pa imong score sunod? tara date sata para pang inspire haha",
                     'image_url' => null,
-                    'video_url' => 'test.com',
+                    'video_url' => null,
                 ],
+            
             ],
 
             'high' => [
                 [
-                    'message' => "😍 Galinga gyod sa akong love-love oy, hahaha. 😂",
-                    'image_url' => '/images/motivational/love-love.jpg',
+                    'message' => "dakoa sa score ron oy😍. dahil dyan deserve mong e date. tara? hahaha",
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
                     'message' => "👑 Ahh, syaro og dili mahimong topnotcher sa ASCPi exam.",
-                    'image_url' => '/images/motivational/topnotcher.jpg',
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
@@ -99,11 +95,11 @@ class MotivationalMessageSeeder extends Seeder
                 ],
                 [
                     'message' => "💙 Ahh, kiligon man sab ta ani oy. Ka-bright ba ani oy, bigyan ng jacket!",
-                    'image_url' => '/images/motivational/bigyan-jacket.jpg',
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
-                    'message' => "😉 Dakoa gyod nimog score. Basic ra ang mga question? Hahaha.",
+                    'message' => "😉 Dakoa gyod nimog score ron? hahaha tara e celebrate nato ne mangaon ta sa gawas hahaha",
                     'image_url' => null,
                     'video_url' => null,
                 ],
@@ -114,12 +110,12 @@ class MotivationalMessageSeeder extends Seeder
                 ],
                 [
                     'message' => "👑 Top scorer na lagi ni. Ako na lang kulang para mahimong top couple. 😆",
-                    'image_url' => '/images/motivational/top-couple.jpg',
+                    'image_url' => null,
                     'video_url' => null,
                 ],
                 [
-                    'message' => "Imong score kay perfect kaayo, murag kani sila perfect hahaha",
-                    'image_url' => '/images/motivational/proud-of-you.jpg',
+                    'message' => "dako lagi kag score ron? pa impress ka sako noh? hahahah ",
+                    'image_url' => null,
                     'video_url' => null,
                 ],
             ],
