@@ -84,7 +84,7 @@
 
                 <div>
                     <p class="text-sm font-medium text-blue-600">Today's Quiz</p>
-                    <h2 class="mt-2 text-4xl font-bold text-slate-800">{{ $todayCount }}/5</h2>
+                    <h2 class="mt-2 text-4xl font-bold text-slate-800">{{ $todayCount }}/30</h2>
                     <p class="text-sm text-slate-500 mt-1">{{ $user->hasTakenQuizToday() ? 'Completed' : 'Available' }}</p>
                 </div>
 

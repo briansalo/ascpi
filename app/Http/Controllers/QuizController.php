@@ -27,7 +27,7 @@ class QuizController extends Controller
         $questions = Question::where('level', $user->level)
             ->whereNotIn('id', $answeredQuestionIds)
             ->inRandomOrder()
-            ->limit(5)
+            ->limit(30)
             ->get();
 
         // if ($questions->isEmpty()) {
