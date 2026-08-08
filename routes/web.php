@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/quiz', [QuizController::class, 'index'])->name('quiz.index');
     Route::get('/quiz/retake', [QuizController::class, 'retake'])->name('quiz.retake');
     Route::post('/quiz/retake', [QuizController::class, 'retakeSubmit'])->name('quiz.retake.submit');
+    Route::get('/quiz/review', [QuizController::class, 'review'])->name('quiz.review');
     Route::get('/review', [QuizReviewController::class, 'index'])->name('review');
     Route::post('/quiz/submit', [QuizController::class, 'submit'])->name('quiz.submit');
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
