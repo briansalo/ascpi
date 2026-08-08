@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('topic');
             $table->string('sub_topic');
             $table->string('level');
-            $table->text('question')->unique();
+            $table->text('question');
             $table->string('option_a');
             $table->string('option_b');
             $table->string('option_c');
